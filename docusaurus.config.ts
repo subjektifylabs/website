@@ -2,8 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: 'Subjektify',
   tagline: 'Decentralized applications development environment for professionals',
@@ -12,7 +10,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'subjektify',
-  projectName: 'dapp',
+  projectName: 'website',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -106,7 +104,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Learn',
+          items: [
+            {
+              label: 'Tutorial',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
           items: [
             {
               label: 'Tutorial',
@@ -144,7 +151,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/subjektify',
+              href: 'https://github.com/subjektifylabs',
             },
           ],
         },
