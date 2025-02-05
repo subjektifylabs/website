@@ -73,8 +73,8 @@ const config: Config = {
       },
       items: [
         {
-          type: 'html',
-          value: '<a>Learn</a>',
+          label: 'Learn',
+          to: '/docs/learn',
           position: 'left',
         },
         {
@@ -83,9 +83,23 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'html',
-          value: '<a>Resources</a>',
+          type: 'dropdown',
+          label: 'Resources',
           position: 'left',
+          items: [
+            {
+              label: 'Guides',
+              to: '/docs/guides',
+            },
+            {
+              label: 'Courses',
+              to: '/courses',
+            },
+            {
+              label: 'Reference',
+              to: '/docs/reference',
+            }
+          ],
         },
         {
           type: 'html',

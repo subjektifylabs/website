@@ -3,41 +3,41 @@ import clsx from 'clsx';
 import CodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 
-function CodeSnippet(): JSX.Element {
+function CodeSnippet() {
     return (
         <div className={styles.codeSnippet}>
             <CodeBlock
                 language='subjekt'
-                title='MyToken.subjekt'
+                title='MyTree.subjekt'
                 showLineNumbers
                 className={styles.codeBlock}
             >
-                {`subject MyToken {
+                {`subject Tree {
     state: {
         name: string
-        symbol: string
-        totalSupply: uint256
+        age: uint256
+        height: uint256
     }
     behaviors: [
-        Mint
+        PlantTree
     ]
 }
     
-behavior Mint`}
+behavior PlantTree`}
             </CodeBlock>
         </div>
     );
 }
 
-export default function OverviewHero(): JSX.Element {
+export default function OverviewHero() {
     return (
         <div className={clsx('hero', 'shadow--lw', styles.overview)}>
             <div className="container">
                 <h1 className=" text--center">
-                Build Decentralized Applications with Subjects
+                    Build Decentralized Applications with Subjects
                 </h1>
                 <p className={clsx('text--center', styles.subtitle)}>
-                Subjektify lets you build decentralized applications (dApps) out of individual pieces called subjects. Create your own subjects like <code>SocialProfile</code>, <code>Token</code>, and <code>VotingSystem</code>. Each encapsulating its own state and behavior definitions.
+                    Subjektify lets you build decentralized applications (dApps) out of individual pieces called subjects. Create your own subjects like <code>SocialProfile</code>, <code>Token</code>, and <code>VotingSystem</code>. Each encapsulating its own state and behavior definitions.
                 </p>
                 <CodeSnippet />
                 <p className={clsx('text--center', styles.subtitle)}>

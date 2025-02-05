@@ -23,28 +23,8 @@
   justify-content: center;
 }
 
-.actions {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.action {
-  color: black;
-}
-
-.actionCard {
-  background-color: transparent;
-  box-shadow: none;
-}
-
 [data-theme='dark'] {
   .heroBanner {
     background-image: url("/static/img/hero-bg-dark.png");
-  }
-
-  .action {
-    color: white;
   }
 }
