@@ -1,0 +1,50 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  background-image: url("/static/img/hero-bg.png");
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.action {
+  color: black;
+}
+
+.actionCard {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+[data-theme='dark'] {
+  .heroBanner {
+    background-image: url("/static/img/hero-bg-dark.png");
+  }
+
+  .action {
+    color: white;
+  }
+}
