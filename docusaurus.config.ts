@@ -74,7 +74,7 @@ const config: Config = {
       items: [
         {
           label: 'Learn',
-          to: '/docs/learn',
+          to: '/learn',
           position: 'left',
         },
         {
