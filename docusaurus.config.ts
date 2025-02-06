@@ -78,13 +78,8 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'html',
-          value: '<a>Solutions</a>',
-          position: 'left',
-        },
-        {
           type: 'dropdown',
-          label: 'Resources',
+          label: 'Documentation',
           position: 'left',
           items: [
             {
@@ -92,18 +87,18 @@ const config: Config = {
               to: '/docs/guides',
             },
             {
-              label: 'Courses',
-              to: '/courses',
+              label: 'API Reference',
+              to: '/docs/reference',
             },
             {
-              label: 'Reference',
-              to: '/docs/reference',
+              label: 'Blog',
+              to: '/blog',
             }
           ],
         },
         {
-          type: 'html',
-          value: '<a>Community</a>',
+          label: 'Community',
+          to: '/community',
           position: 'left',
         },
         {
