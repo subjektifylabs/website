@@ -10,7 +10,7 @@
 }
 
 .heroImage {
-    max-height: 400px;
+    max-height: 375px;
 }
 
 @media screen and (max-width: 996px) {
